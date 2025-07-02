@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playwrite+HU&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(0, 0%, 8%);
+}
+.container{
+    width: 400px;
+    height: 650px;;
+    background-color:hsl(0, 0%, 12%);
+    border-radius: 1rem;
+    padding:20px 10px;
+    font-family: Inter;
+}
+.image{
+    position:relative;
+}
+.avatar{
+    display:block;
+    margin:auto;
+    width: 20%;
+    border-radius:50%; 
+    margin-top: 20px;
+}
+
+.personal-info{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+#name{
+    margin-bottom: 10px;
+    font-weight:600;
+    padding:3px;
+    font-size:24px;
+}
+#location{
+    margin-top:0px;
+    color:var(--Green);
+    font-weight:600;
+}
+#occupation{
+    padding-top: 30px;
+}
+.links{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.links>p:hover{
+    background-color: var(--Green);
+    color:var(--Grey-900);
+    cursor:pointer;
+}
+.links> p{
+    margin:5px;
+    padding:15px;
+    background-color: var(--Grey-700);
+    border-radius: 10px;
+}
+ .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color:whitesmoke;
+}
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:375px){
+    .container{
+        width: 350px;
+        height: 600px;
+        margin: 30px;px;
+    }
+}
+
+
